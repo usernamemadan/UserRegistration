@@ -21,4 +21,12 @@ public class userRegistrationTest {
 		Assert.assertTrue(output);
 	}
 	
+	@Test
+	public void testValidateEmailShouldReturnTrue() {
+		UserRegistration userRegistration = new UserRegistration();
+		boolean output = userRegistration.validateEmail("abc.100@gmail.com.au");
+		Assert.assertTrue(output);
+	}
+	
+	
 }
